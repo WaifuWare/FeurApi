@@ -73,6 +73,29 @@ api.post('/add', (req, res) =>
 	res.json(json);
 })
 
+api.post('/remove', (req, res) => 
+{
+	
+	let message;
+
+	if(req.body.password == "password")
+	{
+		if(req.body.username === undefined){
+			message = "No username was given";	
+		}else{
+			message = "username and passwords are correct, deleting.";
+			db.run("DELETE FROM Players WHERE UUID='" + username + "'");
+		}
+	}else{
+		message = "The given password is incorrect";
+	}
+	
+	let json = {
+		response: message
+	}
+	res.json(json);
+})
+
 /*
 player_db.insert({username : 'noctoack', canAccessToAllBases : 'no', assignedBase : 'degand'})
 player_db.insert({username : 'fox1', canAccessToAllBases : 'no', assignedBase : 'degand'})
