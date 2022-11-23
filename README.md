@@ -45,6 +45,8 @@ after that, just type `.exit`
 
 4) add a endpoint to create a new base in it's own table (require #1 to be done)
 
+5) stuff like API keys and other ids should be in a config.json instead of being hardcoded
+
 # note
 
 The API by itself is not meant for web use. It is meant to be called through an hacked client like WaifuHax (private), or a discord bot.
