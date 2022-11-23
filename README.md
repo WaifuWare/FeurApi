@@ -35,9 +35,19 @@ after that, just type `.exit`
 
 ### for nginx, just proxy_pass it (default port is 4200).
 
+# TODO list
+
+1) Make so each base is it's own table instead of having every member in a singl table
+
+2) add a template database with each default table
+
+3) add a web panel
+
+4) add a endpoint to create a new base in it's own table (require #1 to be done)
+
 # note
 
-The API by itself is not meant for web use. It is meant to be called through an hacked client like WaifuHax (private).
+The API by itself is not meant for web use. It is meant to be called through an hacked client like WaifuHax (private), or a discord bot.
 
 The password in the index.js is not the one used in prod.
 
