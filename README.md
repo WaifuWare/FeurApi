@@ -1,3 +1,5 @@
+# this project is archived as I no longer work with the FeurGroup. The source code is available for archiving purpose as they no longer have any use to the project anyway
+
 # FeurApi
 API for the 0b0t division of the FeurGroup
 
